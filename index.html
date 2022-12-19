@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dvase</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <style>
+
+            .nav-color{
+                background:rgb(32, 30, 30) !important;
+            }
+
+            .nav-link.active {
+                background-color: #FFCA47 !important;
+                color: black !important;
+            }
+
+            .dropdown-item.active{
+                background-color: #FFCA47 !important;
+                color: black !important;
+            }
+
+            .dropdown-item:focus {
+                background-color: #ffcb4739 !important;
+            }
+
+            .dropdown-menu-dark{
+                background:rgb(45, 42, 42) !important;
+            }
+
+            .body-bg{
+                background-color: rgb(103, 103, 103);
+            }
+
+            div[id="navbar-items-label"] a{
+                margin: auto;
+                padding-left: 5%;
+            }
+
+            div[id="navbar-items-label"] form{
+                margin-top: 5%;
+            }
+        </style>
+    </head>
+    <body class="w-100">
+
+        <div class="card w-100" id="scrollspyHeading1">
+            
+            <div class="card-img-overlay">
+                <nav class="navbar navbar-expand-md p-3 h-auto w-auto fixed-top" id="nav-bar">
+                    <div class="container-fluid">
+                        <a href="#scrollspyHeading1" class="navbar-brand text-white offcanvas-title">DVASE</a>
+                        
+                        <button class="navbar-dark navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="navbar-dark w-100">
+                            <div class="collapse navbar-collapse offcanvas-md offcanvas-end" tabindex="0" id="navbar-items" aria-labelledby="navbar-items-label">
+                                <div class="offcanvas-header nav-color w-100">
+                                    <h5 class="offcanvas-title text-white">MENU</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100 nav-color" id="navbar-items-label">
+                                    <ul class="navbar-nav nav-pills me-auto fw-semibold text-uppercase font-monospace">
+                                        <li class="nav-item">
+                                            <a href="#scrollspyHeading1" class="nav-link text-white active">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#scrollspyHeading2" class="nav-link text-white">Features</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#scrollspyHeading3" class="nav-link text-white">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div class="dropdown">
+                                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other</a>
+                                                <ul class="dropdown-menu dropdown-menu-dark fw-bold text-uppercase font-monospace">
+                                                    <li><a class="dropdown-item" href="#scrollspyHeading4">Document</a></li>
+                                                    <li><a class="dropdown-item" href="#scrollspyHeading5">Community</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#scrollspyHeading6">Social Media</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="navbar-nav me-0 fw-bold text-uppercase font-monospace">
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2 fst-italic text-capitalize font-monospace" type="search" placeholder="Search" aria-label="Search" size="8">
+                                            <button class="btn btn-dark opacity-75 fw-bold text-uppercase font-monospace" type="submit">Search</button>
+                                        </form>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <article class="w-100 h-100 text-white">
+            <div data-bs-spy="scroll" data-bs-target="#nav-bar"  data-bs-root-margin="0px 0px -50%" data-bs-smooth-scroll="true" tabindex="0" class="">
+                <div class="card-img-top w-100 opacity-75" id="scrollspyHeading1">
+                    <div class="carousel slide" data-bs-ride="carousel" id="carouselId">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/Dvase/media/bg.jpg" class="d-block w-100 m-auto" alt="">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h5>Climate</h5>
+                                    <p>Click for climate change.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Dvase/media/bg2.jpg" class="d-block w-100 m-auto" alt="">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h5>Syber of Earth</h5>
+                                    <p>Syber Security Dot in Earth's countries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="p-4 body-bg">
+                    
+                    <div id="scrollspyHeading2">
+                        <br class="invisible">
+                        <h2>Features</h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, aliquam qui! Commodi illum consequuntur exercitationem vitae nisi veritatis quidem, incidunt minus aliquam sit. Obcaecati libero ea quis esse reiciendis nulla perspiciatis dolorem, nisi architecto eligendi aut, repellat a odit cumque quo! Dolorum quo facere cupiditate assumenda, possimus perferendis deserunt iusto harum ratione. Officiis illum, harum quod, id accusantium facere fugit unde consectetur repellendus illo culpa qui quos corporis maiores quidem ratione eaque cupiditate, ducimus blanditiis totam autem. Aspernatur sed quis at magni? Accusamus, molestiae? Natus enim iusto harum dolore, perspiciatis consequatur cumque quam placeat debitis eveniet pariatur. Unde sunt repudiandae sit quo est illo, nostrum et. Itaque facere, tempora nostrum aspernatur porro suscipit. Libero quas perspiciatis, quo quaerat vel sequi possimus hic aliquam reiciendis. Recusandae corporis debitis, impedit animi, ipsam aperiam atque error ullam saepe, quam illo architecto repellendus! Blanditiis harum dolorum hic sint cum excepturi adipisci at? In aperiam modi nisi, accusamus, eligendi veritatis doloribus officia ullam quidem corporis assumenda magni? Iusto, repellendus facere? Sequi, blanditiis quam eligendi, eius quisquam temporibus consequuntur culpa obcaecati itaque dicta assumenda at odio, unde odit! Nostrum dicta id vel atque, nemo maxime dignissimos aliquid tenetur consequuntur nam, doloremque dolorum cupiditate? Incidunt obcaecati aliquid similique ex eius repudiandae excepturi illo perspiciatis provident reiciendis adipisci molestiae aut, sint cum id ipsa. Cumque itaque necessitatibus obcaecati architecto culpa possimus ipsum nemo iusto, ipsam corporis? Ea tempora quibusdam earum itaque fuga. Quae ipsam dolor non similique molestias quod sequi qui facere, pariatur earum alias sunt quasi ratione enim inventore a culpa aspernatur eaque aliquid eveniet beatae laudantium! Delectus modi harum reprehenderit quibusdam magni alias id in mollitia. Voluptas reiciendis nostrum mollitia explicabo aliquam tempore reprehenderit fugiat odit, doloribus repellat. Est deleniti quos quis esse, accusantium quae? Placeat ipsa sit reprehenderit iusto velit expedita maxime aliquam exercitationem tenetur distinctio libero, inventore, rerum, labore in doloribus nostrum. Magni, ipsa molestias. Reprehenderit placeat, nulla eveniet voluptate dignissimos quo, temporibus nisi, ut illo eos laborum veritatis? Assumenda officiis quas libero sint beatae quaerat voluptatibus eum reiciendis, aut ab? Optio libero, sequi eveniet eaque, sint consequuntur quis iste voluptates ratione odio quo cum, quibusdam iure a dolores! Ea nulla temporibus nobis beatae dolorem atque ullam eveniet harum maiores nisi, laudantium vitae natus placeat incidunt saepe omnis reprehenderit deserunt consequuntur! Quaerat dolores modi, sint natus quisquam inventore ullam ipsam dolor, maxime distinctio facilis sed magni nesciunt, non nostrum odio? Animi eveniet nemo suscipit non accusantium sunt exercitationem est magnam minus, saepe asperiores cumque aut accusamus odit modi deserunt consequatur natus, mollitia quos commodi et eos maxime. Nam, officiis commodi! Id architecto quam autem atque, veniam excepturi alias nam blanditiis! Vel minima quaerat aspernatur dicta aperiam. Omnis dolore et ad expedita tenetur aliquam blanditiis explicabo, accusamus commodi minima quia fuga dolorum mollitia eaque officia in optio, sint necessitatibus! Expedita adipisci, nobis magnam quas harum magni porro vero facere. Autem molestiae ad quo laborum doloremque sit, accusantium quibusdam expedita, laudantium sapiente repellat nostrum dignissimos consectetur reprehenderit ipsum? Atque libero illum cum, animi suscipit vel ipsum!
+                        </p>
+                    </div>
+                    
+                    <div id="scrollspyHeading3">
+                        <br class="invisible">
+                        <h2>About</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur dolorum delectus porro non. Aperiam consectetur excepturi nesciunt culpa modi delectus quo, pariatur quia, repudiandae magni magnam animi id sit reiciendis distinctio ex aspernatur esse veritatis? Nobis ducimus libero aut tenetur beatae cupiditate! Natus culpa vel ipsa cum reiciendis, sint deleniti laboriosam ullam expedita esse amet quo quos aut perferendis unde minima id quisquam blanditiis est. Quis pariatur minus maxime amet sit deserunt tenetur nemo eius perspiciatis ullam! Fugit necessitatibus earum ut recusandae cupiditate nihil iusto aliquid fugiat dignissimos laboriosam? Temporibus quas pariatur ab reprehenderit nam ipsa ea exercitationem possimus laborum esse? Ipsam provident architecto, adipisci culpa impedit eveniet quas quasi ex ut itaque, dicta est cupiditate fugiat nostrum voluptates voluptatem optio odio eum mollitia similique, facilis eaque maxime omnis nemo! Fuga obcaecati dicta culpa doloribus suscipit. Ipsam deleniti asperiores ex velit, iste voluptates, labore eos laborum, eligendi saepe impedit pariatur esse. Doloremque sed facere, ullam, velit quibusdam adipisci sint totam quam eum veritatis in, soluta nisi animi? Voluptatibus cum ducimus rerum et ex recusandae, maxime quia voluptates, saepe placeat aliquam? Quae necessitatibus fugiat aspernatur, dolorem consequuntur repellendus ex dolorum molestiae officia velit ratione perferendis corporis labore soluta possimus unde blanditiis architecto minus quas itaque voluptate eos maiores. Voluptates commodi tempore recusandae a totam in minus, deserunt quibusdam soluta porro quo laborum saepe adipisci unde ea nihil libero voluptatibus consequuntur similique id inventore, sit quia fugiat cupiditate. Quisquam, repudiandae. Animi dolores voluptatem eos est vero ad nam, qui in explicabo asperiores dolorum doloribus, commodi dolorem facilis, a inventore aut voluptatum iusto consectetur cum porro omnis quod voluptatibus? Quaerat obcaecati quidem libero aperiam recusandae maiores necessitatibus reiciendis? Officiis rerum molestias ut, cupiditate unde cumque impedit atque. Eaque officiis, unde minus porro modi illo, adipisci assumenda amet asperiores inventore nemo doloremque totam.
+                        </p>
+                    </div>
+
+                    <div id="scrollspyHeading4">
+                        <br class="invisible">
+                        <h2>Document</h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, ea voluptas vitae similique ipsum sapiente error nam! Esse voluptatibus nobis vel labore, veniam omnis numquam nesciunt nihil suscipit, impedit eligendi expedita nisi libero? Laudantium illo, quos rem iusto autem, cumque ipsum quia consequuntur natus deserunt voluptates illum libero impedit debitis beatae, fugit repudiandae sequi voluptate enim. Quisquam dignissimos perspiciatis consectetur doloremque voluptates soluta quidem! Quos provident quod distinctio porro deleniti blanditiis minus facilis, sunt, quis ex maxime et voluptatem iusto veritatis voluptate ipsam voluptates ipsa accusantium. Natus incidunt, omnis facilis quos eveniet perferendis impedit libero magnam sequi iure sunt eligendi, molestias, optio voluptatibus dolorem nesciunt excepturi. Corporis, modi illo doloribus qui nemo tempora aperiam hic? Iusto, repellat accusamus nisi a quas, optio molestias perferendis similique tempora laudantium magnam. Consequatur earum adipisci at? Ipsa numquam, repudiandae eveniet exercitationem vel maxime non ex corporis voluptas reiciendis eius blanditiis quisquam ad. Itaque, dolor! Perspiciatis molestiae dolorum dolores eveniet voluptatibus saepe eligendi tempora hic excepturi, explicabo modi consequuntur odio dolor unde rerum magni optio libero fugiat quasi magnam at earum. Necessitatibus reprehenderit saepe vel illo quod est quo ipsum illum nulla ducimus natus accusamus iusto aut error sapiente at ut aperiam, corrupti nesciunt. Dolorem autem sed expedita quis commodi nostrum ipsum quos voluptatum cupiditate voluptate aspernatur reiciendis deleniti ratione est facilis, nemo laboriosam inventore magni eum possimus earum! Laborum repellat distinctio sint nihil similique explicabo fugiat praesentium accusantium culpa vero rerum, ullam laboriosam consequatur id, tempore ipsum sed. Impedit deleniti illo, eveniet architecto sed nulla neque repellendus. Maiores commodi nam quaerat nemo, eveniet debitis necessitatibus, voluptate, enim esse labore dignissimos modi cupiditate doloribus rem molestiae. Blanditiis at quae possimus deleniti impedit aspernatur ea quod sed maxime. Qui asperiores obcaecati cumque necessitatibus earum quis iste quam iure molestias commodi? Asperiores iusto facilis repudiandae placeat quos rerum ut voluptate qui animi omnis deserunt perferendis magni autem esse eius, sunt aliquam, quisquam nisi? Asperiores officia omnis enim itaque! Obcaecati aliquid reiciendis aut, rem sit, assumenda incidunt fuga aliquam laudantium inventore temporibus provident recusandae eveniet, ex quae animi cupiditate enim laborum? Quaerat molestiae reprehenderit nisi voluptatum molestias autem eveniet. Voluptatum quis dolores enim nulla magnam ipsum placeat in voluptatibus accusantium explicabo error iure, natus tempore aliquid. Repellat officia quam id quibusdam modi voluptate placeat explicabo, qui similique sit laboriosam sed. A illum suscipit voluptates. Repudiandae, illum, delectus nobis magni sed suscipit reiciendis ipsum minus autem labore rerum sit?
+                        </p>
+                        <hr>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, doloribus perferendis. At nulla id quibusdam a ea labore quam iusto?</p>
+                        <a href="#scrollspyHeading2" class="btn btn-dark shadow btn-lg float-end">Go Features</a>
+                    </div>
+
+                    <div id="scrollspyHeading5">
+                        <br class="invisible">
+                        <h2>Community<h2>
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="https://via.placeholder.com/100" alt="...">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <br>
+                                <h4 class="lead">Comments</h4>
+                                <div class="m-2 form-control-sm">
+                                    <div class="d-flex m-2">
+                                        <div class="flex-shrink-0">
+                                            <img src="https://via.placeholder.com/64" alt="...">
+                                        </div>
+                                        <p class="flex-grow-1 ms-3">
+                                            This is some content from a media component. You can replace this with any content and adjust it as needed.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex m-2">
+                                        <div class="flex-shrink-0">
+                                            <img src="https://via.placeholder.com/64" alt="...">
+                                        </div>
+                                        <p class="flex-grow-1 ms-3">
+                                            This is some content from a media component. You can replace this with any content and adjust it as needed.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex m-2">
+                                        <div class="flex-shrink-0">
+                                            <img src="https://via.placeholder.com/64" alt="...">
+                                        </div>
+                                        <p class="flex-grow-1 ms-3">
+                                            This is some content from a media component. You can replace this with any content and adjust it as needed.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex m-2">
+                                        <div class="flex-shrink-0">
+                                            <img src="https://via.placeholder.com/64" alt="...">
+                                        </div>
+                                        <p class="flex-grow-1 ms-3">
+                                            This is some content from a media component. You can replace this with any content and adjust it as needed.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div id="scrollspyHeading6">
+                        <br class="invisible">
+                        <h2>Social Media</h2>
+                        <div class="">
+                            <a class="badge link-dark" href="https://linktr.ee/dvaser" target="_blank">
+                                <img src="https://via.placeholder.com/30" alt="">
+                            </a>
+                            <a class="badge link-dark" href="https://linktr.ee/dvaser" target="_blank">
+                                <img src="https://via.placeholder.com/30" alt="">
+                            </a>
+                            <a class="badge link-dark" href="https://linktr.ee/dvaser" target="_blank">
+                                <img src="https://via.placeholder.com/30" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+        <script type="text/javascript">
+            function changeNavBg(){
+                var nav = document.getElementById('nav-bar');
+                var scrollContent = document.getElementById('scrollspyHeading2');
+                let value = scrollContent.offsetTop-100;
+                var scrollValue = window.scrollY;
+                if (scrollValue >= value){
+                    nav.classList.add('nav-color');
+                }
+                else{
+                    nav.classList.remove('nav-color');
+                }
+            }
+
+            window.addEventListener('scroll', changeNavBg);
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    </body>
+</html>
