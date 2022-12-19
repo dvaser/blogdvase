@@ -1,1 +1,2 @@
-# blogdvase is a blog example with Bootstrap5
+# What is blogdvase?
+## This is blog example with Bootstrap5
